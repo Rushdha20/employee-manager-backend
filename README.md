@@ -1,7 +1,7 @@
 # Employee Manager Backend
 
 Welcome to the Employee Manager backend repository! 
--This Spring Boot application serves as the backend for a simple employee management system.
+This Spring Boot application serves as the backend for a simple employee management system.
 
 ## Tech Stack
 - **Framework:** Spring Boot
