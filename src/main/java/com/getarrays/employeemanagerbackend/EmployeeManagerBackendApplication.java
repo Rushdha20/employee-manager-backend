@@ -8,6 +8,7 @@ public class EmployeeManagerBackendApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EmployeeManagerBackendApplication.class, args);
+		System.out.println("Rushdha");
 	}
 
 }
