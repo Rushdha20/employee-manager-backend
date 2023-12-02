@@ -14,11 +14,13 @@ public class EmployeeService {
     private final EmployeeRepo employeeRepo;
 
     @Autowired
-    public EmployeeService(EmployeeRepo employeeRepo) {
+    public EmployeeService(EmployeeRepo employeeRepo) // inject repo into constructor to autowire the repo inside the class
+    {
         this.employeeRepo = employeeRepo;
     }
 
-    public Employee addEmployee(Employee employee){
+    public Employee addEmployee(Employee employee) //POST
+    {
         employee.setEmployeeCode(UUID.randomUUID().toString());
         return employeeRepo.save(employee);
     }
@@ -27,7 +29,8 @@ public class EmployeeService {
         return employeeRepo.findAll();
     }
 
-    public Employee updateEmployee(Employee employee){
+    public Employee updateEmployee(Employee employee) //PUT
+    {
         return employeeRepo.save(employee);
     }
 
